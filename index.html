@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мультимедійна карта</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0,0,0,0.3);
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 15px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.social a {
+    margin-right: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌍 Моя мультимедійна сторінка</h1>
+<p>Карта, маршрут, панорама, відео та музика</p>
+</header>
+
+<section>
+
+<div class="card">
+<h2>📍 Карта (Львівська політехніка)</h2>
+<iframe 
+src="https://www.google.com/maps?q=Львівська%20політехніка&output=embed"
+loading="lazy">
+</iframe>
+</div>
+
+<div class="card">
+<h2>🛣️ Маршрут (Площа Ринок → Політехніка)</h2>
+<iframe 
+src="https://www.google.com/maps?q=Rynok%20Square%20to%20Lviv%20Polytechnic&output=embed">
+</iframe>
+</div>
+
+<div class="card">
+<h2>🎥 Відео</h2>
+<iframe 
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+</div>
+
+<div class="card">
+<h2>🎵 Музика</h2>
+
+<audio controls loop>
+    <!-- Онлайн (основний) -->
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    
+    <!-- Локальний (резерв) -->
+    <source src="music.mp3" type="audio/mpeg">
+
+    Ваш браузер не підтримує аудіо
+</audio>
+
+</div>
+
+<div class="card social">
+<h2>🌐 Соцмережі</h2>
+
+<a href="https://facebook.com" target="_blank">Facebook</a>
+<a href="https://instagram.com" target="_blank">Instagram</a>
+<a href="https://youtube.com" target="_blank">YouTube</a>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Навчальний проєкт</p>
+</footer>
+
+</body>
+</html>
